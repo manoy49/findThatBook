@@ -12,7 +12,7 @@ Download Robo 3T for easier handling.
 
 Install maven.
 
-Change the goodreads.key in application.properties.
+Change the goodreads.key in application.properties. (It currently has mine.)
 
 Change server.port, if the port is already in use.
 
