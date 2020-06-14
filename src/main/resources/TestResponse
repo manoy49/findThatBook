@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GoodreadsResponse>
+  <Request>
+    <authentication>true</authentication>
+      <key><![CDATA[vV76zCN8zVEcmFdhC28lnw]]></key>
+    <method><![CDATA[search_index]]></method>
+  </Request>
+  <search>
+  <query><![CDATA[Paulo]]></query>
+    <results-start>1</results-start>
+    <results-end>20</results-end>
+    <total-results>11675</total-results>
+    <source>Goodreads</source>
+    <query-time-seconds>0.05</query-time-seconds>
+    <results>
+        <work>
+  <id type="integer">4835472</id>
+  <books_count type="integer">585</books_count>
+  <ratings_count type="integer">2005273</ratings_count>
+  <text_reviews_count type="integer">76942</text_reviews_count>
+  <original_publication_year type="integer">1988</original_publication_year>
+  <original_publication_month type="integer" nil="true"/>
+  <original_publication_day type="integer" nil="true"/>
+  <average_rating>3.87</average_rating>
+  <best_book type="Book">
+    <id type="integer">865</id>
+    <title>The Alchemist</title>
+    <author>
+      <id type="integer">566</id>
+      <name>Paulo Coelho</name>
+    </author>
+    <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1483412266l/865._SX98_.jpg</image_url>
+    <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1483412266l/865._SY75_.jpg</small_image_url>
+  </best_book>
+</work>
+
+        <work>
+  <id type="integer">3287043</id>
+  <books_count type="integer">295</books_count>
+  <ratings_count type="integer">166938</ratings_count>
+  <text_reviews_count type="integer">7811</text_reviews_count>
+  <original_publication_year type="integer">1998</original_publication_year>
+  <original_publication_month type="integer" nil="true"/>
+  <original_publication_day type="integer" nil="true"/>
+  <average_rating>3.71</average_rating>
+  <best_book type="Book">
+    <id type="integer">1431</id>
+    <title>Veronika Decides to Die</title>
+    <author>
+      <id type="integer">566</id>
+      <name>Paulo Coelho</name>
+    </author>
+    <image_url>https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png</image_url>
+    <small_image_url>https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png</small_image_url>
+  </best_book>
+</work>
+
+        <work>
+  <id type="integer">1950213</id>
+  <books_count type="integer">257</books_count>
+  <ratings_count type="integer">144424</ratings_count>
+  <text_reviews_count type="integer">6614</text_reviews_count>
+  <original_publication_year type="integer">2003</original_publication_year>
+  <original_publication_month type="integer" nil="true"/>
+  <original_publication_day type="integer" nil="true"/>
+  <average_rating>3.70</average_rating>
+  <best_book type="Book">
+    <id type="integer">1430</id>
+    <title>Eleven Minutes</title>
+    <author>
+      <id type="integer">566</id>
+      <name>Paulo Coelho</name>
+    </author>
+    <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1358266987l/1430._SX98_.jpg</image_url>
+    <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1358266987l/1430._SY75_.jpg</small_image_url>
+  </best_book>
+</work>
+
+        <work>
+  <id type="integer">3249453</id>
+  <books_count type="integer">11</books_count>
+  <ratings_count type="integer">85164</ratings_count>
+  <text_reviews_count type="integer">3691</text_reviews_count>
+  <original_publication_year type="integer">1994</original_publication_year>
+  <original_publication_month type="integer" nil="true"/>
+  <original_publication_day type="integer" nil="true"/>
+  <average_rating>3.57</average_rating>
+  <best_book type="Book">
+    <id type="integer">1428</id>
+    <title>By the River Piedra I Sat Down and Wept</title>
+    <author>
+      <id type="integer">566</id>
+      <name>Paulo Coelho</name>
+    </author>
+    <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1466877798l/1428._SX98_.jpg</image_url>
+    <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1466877798l/1428._SY75_.jpg</small_image_url>
+  </best_book>
+</work>
+
+        <work>
+  <id type="integer">13855759</id>
+  <books_count type="integer">167</books_count>
+  <ratings_count type="integer">68902</ratings_count>
+  <text_reviews_count type="integer">3711</text_reviews_count>
+  <original_publication_year type="integer">2006</original_publication_year>
+  <original_publication_month type="integer">9</original_publication_month>
+  <original_publication_day type="integer" nil="true"/>
+  <average_rating>3.54</average_rating>
+  <best_book type="Book">
+    <id type="integer">816720</id>
+    <title>The Witch of Portobello</title>
+    <author>
+      <id type="integer">566</id>
+      <name>Paulo Coelho</name>
+    </author>
+    <image_url>https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png</image_url>
+    <small_image_url>https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png</small_image_url>
+  </best_book>
+</work>
+
+        <work>
+  <id type="integer">3341790</id>
+  <books_count type="integer">78</books_count>
+  <ratings_count type="integer">67249</ratings_count>
+  <text_reviews_count type="integer">3248</text_reviews_count>
+  <original_publication_year type="integer">2005</original_publication_year>
+  <original_publication_month type="integer" nil="true"/>
+  <original_publication_day type="integer" nil="true"/>
+  <average_rating>3.58</average_rating>
+  <best_book type="Book">
+    <id type="integer">1427</id>
+    <title>The Zahir</title>
+    <author>
+      <id type="integer">566</id>
+      <name>Paulo Coelho</name>
+    </author>
+    <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1493044059l/1427._SX98_.jpg</image_url>
+    <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1493044059l/1427._SY75_.jpg</small_image_url>
+  </best_book>
+</work>
+
+        <work>
+  <id type="integer">3252430</id>
+  <books_count type="integer">93</books_count>
+  <ratings_count type="integer">65453</ratings_count>
+  <text_reviews_count type="integer">3238</text_reviews_count>
+  <original_publication_year type="integer">1990</original_publication_year>
+  <original_publication_month type="integer" nil="true"/>
+  <original_publication_day type="integer" nil="true"/>
+  <average_rating>3.48</average_rating>
+  <best_book type="Book">
+    <id type="integer">68591</id>
+    <title>Brida</title>
+    <author>
+      <id type="integer">566</id>
+      <name>Paulo Coelho</name>
+    </author>
+    <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1403772793l/68591._SX98_.jpg</image_url>
+    <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1403772793l/68591._SX50_.jpg</small_image_url>
+  </best_book>
+</work>
+
+        <work>
+  <id type="integer">3207183</id>
+  <books_count type="integer">117</books_count>
+  <ratings_count type="integer">58740</ratings_count>
+  <text_reviews_count type="integer">2925</text_reviews_count>
+  <original_publication_year type="integer">2000</original_publication_year>
+  <original_publication_month type="integer" nil="true"/>
+  <original_publication_day type="integer" nil="true"/>
+  <average_rating>3.61</average_rating>
+  <best_book type="Book">
+    <id type="integer">4008</id>
+    <title>The Devil and Miss Prym (On the Seventh Day, #3)</title>
+    <author>
+      <id type="integer">566</id>
+      <name>Paulo Coelho</name>
+    </author>
+    <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1359082264l/4008._SX98_.jpg</image_url>
+    <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1359082264l/4008._SY75_.jpg</small_image_url>
+  </best_book>
+</work>
+
+        <work>
+  <id type="integer">40165571</id>
+  <books_count type="integer">114</books_count>
+  <ratings_count type="integer">45056</ratings_count>
+  <text_reviews_count type="integer">4282</text_reviews_count>
+  <original_publication_year type="integer">2012</original_publication_year>
+  <original_publication_month type="integer" nil="true"/>
+  <original_publication_day type="integer" nil="true"/>
+  <average_rating>3.06</average_rating>
+  <best_book type="Book">
+    <id type="integer">20819682</id>
+    <title>Adultery</title>
+    <author>
+      <id type="integer">566</id>
+      <name>Paulo Coelho</name>
+    </author>
+    <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1406247571l/20819682._SX98_.jpg</image_url>
+    <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1406247571l/20819682._SX50_.jpg</small_image_url>
+  </best_book>
+</work>
+
+        <work>
+  <id type="integer">6186633</id>
+  <books_count type="integer">218</books_count>
+  <ratings_count type="integer">47815</ratings_count>
+  <text_reviews_count type="integer">2058</text_reviews_count>
+  <original_publication_year type="integer">1987</original_publication_year>
+  <original_publication_month type="integer" nil="true"/>
+  <original_publication_day type="integer" nil="true"/>
+  <average_rating>3.65</average_rating>
+  <best_book type="Book">
+    <id type="integer">4004</id>
+    <title>The Pilgrimage</title>
+    <author>
+      <id type="integer">566</id>
+      <name>Paulo Coelho</name>
+    </author>
+    <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1307909268l/4004._SX98_.jpg</image_url>
+    <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1307909268l/4004._SY75_.jpg</small_image_url>
+  </best_book>
+</work>
+
+        <work>
+  <id type="integer">915602</id>
+  <books_count type="integer">80</books_count>
+  <ratings_count type="integer">23464</ratings_count>
+  <text_reviews_count type="integer">1328</text_reviews_count>
+  <original_publication_year type="integer">1968</original_publication_year>
+  <original_publication_month type="integer" nil="true"/>
+  <original_publication_day type="integer" nil="true"/>
+  <average_rating>4.28</average_rating>
+  <best_book type="Book">
+    <id type="integer">72657</id>
+    <title>Pedagogy of the Oppressed</title>
+    <author>
+      <id type="integer">41108</id>
+      <name>Paulo Freire</name>
+    </author>
+    <image_url>https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png</image_url>
+    <small_image_url>https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png</small_image_url>
+  </best_book>
+</work>
+
+        <work>
+  <id type="integer">1179777</id>
+  <books_count type="integer">16</books_count>
+  <ratings_count type="integer">29657</ratings_count>
+  <text_reviews_count type="integer">1491</text_reviews_count>
+  <original_publication_year type="integer">1997</original_publication_year>
+  <original_publication_month type="integer" nil="true"/>
+  <original_publication_day type="integer" nil="true"/>
+  <average_rating>3.70</average_rating>
+  <best_book type="Book">
+    <id type="integer">1426</id>
+    <title>Warrior of the Light</title>
+    <author>
+      <id type="integer">566</id>
+      <name>Paulo Coelho</name>
+    </author>
+    <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1359135200l/1426._SX98_.jpg</image_url>
+    <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1359135200l/1426._SY75_.jpg</small_image_url>
+  </best_book>
+</work>
+
+        <work>
+  <id type="integer">51165805</id>
+  <books_count type="integer">126</books_count>
+  <ratings_count type="integer">29717</ratings_count>
+  <text_reviews_count type="integer">2990</text_reviews_count>
+  <original_publication_year type="integer">2016</original_publication_year>
+  <original_publication_month type="integer" nil="true"/>
+  <original_publication_day type="integer" nil="true"/>
+  <average_rating>3.34</average_rating>
+  <best_book type="Book">
+    <id type="integer">30686326</id>
+    <title>The Spy</title>
+    <author>
+      <id type="integer">566</id>
+      <name>Paulo Coelho</name>
+    </author>
+    <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1466584793l/30686326._SX98_.jpg</image_url>
+    <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1466584793l/30686326._SY75_.jpg</small_image_url>
+  </best_book>
+</work>
+
+        <work>
+  <id type="integer">19254211</id>
+  <books_count type="integer">189</books_count>
+  <ratings_count type="integer">37389</ratings_count>
+  <text_reviews_count type="integer">1527</text_reviews_count>
+  <original_publication_year type="integer">1996</original_publication_year>
+  <original_publication_month type="integer" nil="true"/>
+  <original_publication_day type="integer" nil="true"/>
+  <average_rating>3.63</average_rating>
+  <best_book type="Book">
+    <id type="integer">4005</id>
+    <title>The Fifth Mountain</title>
+    <author>
+      <id type="integer">566</id>
+      <name>Paulo Coelho</name>
+    </author>
+    <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1358268472l/4005._SX98_.jpg</image_url>
+    <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1358268472l/4005._SY75_.jpg</small_image_url>
+  </best_book>
+</work>
+
+        <work>
+  <id type="integer">5424205</id>
+  <books_count type="integer">148</books_count>
+  <ratings_count type="integer">31398</ratings_count>
+  <text_reviews_count type="integer">2044</text_reviews_count>
+  <original_publication_year type="integer">2008</original_publication_year>
+  <original_publication_month type="integer" nil="true"/>
+  <original_publication_day type="integer" nil="true"/>
+  <average_rating>3.38</average_rating>
+  <best_book type="Book">
+    <id type="integer">5356711</id>
+    <title>The Winner Stands Alone</title>
+    <author>
+      <id type="integer">566</id>
+      <name>Paulo Coelho</name>
+    </author>
+    <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1358266380l/5356711._SX98_.jpg</image_url>
+    <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1358266380l/5356711._SY75_.jpg</small_image_url>
+  </best_book>
+</work>
+
+        <work>
+  <id type="integer">80359770</id>
+  <books_count type="integer">154</books_count>
+  <ratings_count type="integer">31597</ratings_count>
+  <text_reviews_count type="integer">2774</text_reviews_count>
+  <original_publication_year type="integer">2010</original_publication_year>
+  <original_publication_month type="integer" nil="true"/>
+  <original_publication_day type="integer" nil="true"/>
+  <average_rating>3.37</average_rating>
+  <best_book type="Book">
+    <id type="integer">9086994</id>
+    <title>Aleph</title>
+    <author>
+      <id type="integer">566</id>
+      <name>Paulo Coelho</name>
+    </author>
+    <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1397502326l/9086994._SX98_.jpg</image_url>
+    <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1397502326l/9086994._SY75_.jpg</small_image_url>
+  </best_book>
+</work>
+
+        <work>
+  <id type="integer">21507847</id>
+  <books_count type="integer">108</books_count>
+  <ratings_count type="integer">23943</ratings_count>
+  <text_reviews_count type="integer">2556</text_reviews_count>
+  <original_publication_year type="integer">2012</original_publication_year>
+  <original_publication_month type="integer" nil="true"/>
+  <original_publication_day type="integer" nil="true"/>
+  <average_rating>3.82</average_rating>
+  <best_book type="Book">
+    <id type="integer">16054811</id>
+    <title>Manuscript Found in Accra</title>
+    <author>
+      <id type="integer">566</id>
+      <name>Paulo Coelho</name>
+    </author>
+    <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1362586181l/16054811._SX98_.jpg</image_url>
+    <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1362586181l/16054811._SX50_.jpg</small_image_url>
+  </best_book>
+</work>
+
+        <work>
+  <id type="integer">2117724</id>
+  <books_count type="integer">94</books_count>
+  <ratings_count type="integer">17379</ratings_count>
+  <text_reviews_count type="integer">991</text_reviews_count>
+  <original_publication_year type="integer">2000</original_publication_year>
+  <original_publication_month type="integer" nil="true"/>
+  <original_publication_day type="integer" nil="true"/>
+  <average_rating>3.92</average_rating>
+  <best_book type="Book">
+    <id type="integer">587666</id>
+    <title>Like the Flowing River</title>
+    <author>
+      <id type="integer">566</id>
+      <name>Paulo Coelho</name>
+    </author>
+    <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1399717203l/587666._SX98_.jpg</image_url>
+    <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1399717203l/587666._SY75_.jpg</small_image_url>
+  </best_book>
+</work>
+
+        <work>
+  <id type="integer">2260900</id>
+  <books_count type="integer">112</books_count>
+  <ratings_count type="integer">21202</ratings_count>
+  <text_reviews_count type="integer">1011</text_reviews_count>
+  <original_publication_year type="integer">1988</original_publication_year>
+  <original_publication_month type="integer" nil="true"/>
+  <original_publication_day type="integer" nil="true"/>
+  <average_rating>3.32</average_rating>
+  <best_book type="Book">
+    <id type="integer">4006</id>
+    <title>The Valkyries</title>
+    <author>
+      <id type="integer">566</id>
+      <name>Paulo Coelho</name>
+    </author>
+    <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1414013931l/4006._SX98_.jpg</image_url>
+    <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1414013931l/4006._SY75_.jpg</small_image_url>
+  </best_book>
+</work>
+
+        <work>
+  <id type="integer">6272393</id>
+  <books_count type="integer">36</books_count>
+  <ratings_count type="integer">2857</ratings_count>
+  <text_reviews_count type="integer">119</text_reviews_count>
+  <original_publication_year type="integer">2007</original_publication_year>
+  <original_publication_month type="integer">12</original_publication_month>
+  <original_publication_day type="integer">1</original_publication_day>
+  <average_rating>3.96</average_rating>
+  <best_book type="Book">
+    <id type="integer">6095360</id>
+    <title>Paulo Coelho: A Warrior's Life - The Authorized Biography</title>
+    <author>
+      <id type="integer">62166</id>
+      <name>Fernando Morais</name>
+    </author>
+    <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1360181550l/6095360._SX98_.jpg</image_url>
+    <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1360181550l/6095360._SY75_.jpg</small_image_url>
+  </best_book>
+</work>
+
+    </results>
+</search>
+
+</GoodreadsResponse>
