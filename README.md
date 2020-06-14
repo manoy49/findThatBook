@@ -9,6 +9,8 @@ It has an api for searching a book by it's author, plot or title.
 Install mongodb. 
 
 Download Robo 3T for easier handling.
+Connect to your localhost database.
+Generally running on port 27017.
 
 Install maven.
 
