@@ -8,6 +8,7 @@ import com.testvagrant.booknamechallenge.findthatbook.Service.Search;
 import com.testvagrant.booknamechallenge.findthatbook.Utils.BookNotFoundException;
 import com.testvagrant.booknamechallenge.findthatbook.Utils.QueryHelper;
 import com.testvagrant.booknamechallenge.findthatbook.Utils.RestAPITemplate;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,7 @@ import java.util.List;
 import java.util.Map;
 
 @Service
+@Slf4j
 public class GoodReadSearchImpl implements Search {
 
     @Autowired
@@ -28,8 +30,6 @@ public class GoodReadSearchImpl implements Search {
     RestAPITemplate restAPITemplate;
     @Autowired
     BookRepository bookRepository;
-
-    private static Logger logger = LoggerFactory.getLogger(GoodReadSearchImpl.class);
 
     @Override
     public BookList findBooks(SearchQueryParam searchQueryParam) throws Exception {
@@ -45,7 +45,7 @@ public class GoodReadSearchImpl implements Search {
             else
                 return getResultsFromBookReadApi(params);
         }
-        logger.info(" ====== Getting Results from local database ====== ");
+        log.info(" ====== Getting Results from local database ====== ");
         return result;
     }
 
@@ -69,7 +69,7 @@ public class GoodReadSearchImpl implements Search {
         else {
             responses.add(restAPITemplate.getSearchResults(params));
         }
-        logger.info(" ======= Getting data from good read api ======= ");
+        log.info(" ======= Getting data from good read api ======= ");
         if(otherParam.length > 0) {
             try {
                 return readResponseProcessor.saveAndProcessResults(responses, otherParam[0]);

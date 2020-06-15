@@ -23,8 +23,6 @@ public class SearchBookController {
     @Autowired
     Search search;
 
-    private static Logger LOG = LoggerFactory.getLogger(SearchBookController.class);
-
     @GetMapping("find")
     public ResponseEntity findBook(@RequestParam(required = false) String title,
                                    @RequestParam String author,
@@ -39,7 +37,7 @@ public class SearchBookController {
            if(year != null)
                searchQueryParam.setYear(year);
            result = search.findBooks(searchQueryParam);
-           LOG.info("Result of the " + searchQueryParam.toString() +" query is : " + result.getBooks().toString());
+           log.info("Result of the " + searchQueryParam.toString() +" query is : " + result.getBooks().toString());
         }catch (Exception e) {
             throw e;
         }
