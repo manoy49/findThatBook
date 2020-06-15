@@ -27,7 +27,7 @@ public class GoodReadResponseProcessor {
     @Autowired
     XmlParser xmlParser;
 
-    public BookList saveAndProcessResults(List<String> xmlResponses, String... description) throws BookNotFoundException {
+    public BookList saveAndProcessResults(List<String> xmlResponses, String... otherParam) throws BookNotFoundException {
         BookList result = new BookList();
         List books = new ArrayList();
         ArrayList finalBookIds = finalBookIDs(xmlResponses);
@@ -81,11 +81,14 @@ public class GoodReadResponseProcessor {
                     if(toFind.size() == 0)
                         bookRepository.save(book);
 
-                    if(description.length > 0) {
-                        if(book.getDescription().toLowerCase().contains(description[0].toLowerCase())) {
+                    if(otherParam.length > 0) {
+                        if(book.getDescription().toLowerCase().contains(otherParam[0].toLowerCase())) {
                             books.add(book);
                         }
-                        else if(description[0].toLowerCase().contains(book.getDescription().toLowerCase())) {
+                        else if(otherParam[0].toLowerCase().contains(book.getDescription().toLowerCase())) {
+                            books.add(book);
+                        }
+                        else if(book.getPublicationYear() == Integer.valueOf(otherParam[0])) {
                             books.add(book);
                         }
                         else {

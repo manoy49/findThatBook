@@ -8,4 +8,5 @@ public class SearchQueryParam {
     private String title;
     private String plot;
     private int isbn;
+    private int year;
 }

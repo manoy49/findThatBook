@@ -40,6 +40,8 @@ public class GoodReadSearchImpl implements Search {
         {
             if(searchQueryParam.getPlot() != null)
                 return getResultsFromBookReadApi(params, searchQueryParam.getPlot());
+            else if(searchQueryParam.getYear() != 0)
+                return getResultsFromBookReadApi(params, String.valueOf(searchQueryParam.getYear()));
             else
                 return getResultsFromBookReadApi(params);
         }
@@ -47,7 +49,7 @@ public class GoodReadSearchImpl implements Search {
         return result;
     }
 
-    private BookList getResultsFromBookReadApi(Map params, String... plot) throws Exception {
+    private BookList getResultsFromBookReadApi(Map params, String... otherParam) throws Exception {
         List<String> responses = new ArrayList<>();
 
         if(params.containsKey(Constants.MULTIPLE) && (Boolean) params.get(Constants.MULTIPLE)) {
@@ -68,9 +70,9 @@ public class GoodReadSearchImpl implements Search {
             responses.add(restAPITemplate.getSearchResults(params));
         }
         logger.info(" ======= Getting data from good read api ======= ");
-        if(plot.length > 0) {
+        if(otherParam.length > 0) {
             try {
-                return readResponseProcessor.saveAndProcessResults(responses, plot[0]);
+                return readResponseProcessor.saveAndProcessResults(responses, otherParam[0]);
             }catch (BookNotFoundException e) {
                 throw e;
             }
@@ -81,11 +83,26 @@ public class GoodReadSearchImpl implements Search {
     private BookList getBooksFromLocal(SearchQueryParam searchQueryParam) {
         BookList result = new BookList();
 
-        if((searchQueryParam.getTitle() != null && !searchQueryParam.getTitle().isEmpty()) && (searchQueryParam.getAuthorName() != null && !searchQueryParam.getAuthorName().isEmpty())){
+        if((searchQueryParam.getTitle() != null && !searchQueryParam.getTitle().isEmpty()) && (searchQueryParam.getAuthorName() != null && !searchQueryParam.getAuthorName().isEmpty())
+            && (searchQueryParam.getYear() != 0) && searchQueryParam.getPlot() != null) {
+            result.setBooks(bookRepository.getBooksByPublicationYearEqualsAndAuthorNameContainingIgnoreCaseAndDescriptionContainingIgnoreCaseAndTitleContainingIgnoreCase(
+                    searchQueryParam.getYear(), searchQueryParam.getAuthorName(), searchQueryParam.getPlot(), searchQueryParam.getTitle()
+            ));
+        }
+        else if((searchQueryParam.getAuthorName() != null && !searchQueryParam.getAuthorName().isEmpty())
+                && (searchQueryParam.getYear() != 0) && searchQueryParam.getPlot() != null) {
+            result.setBooks(bookRepository.getBooksByPublicationYearEqualsAndAuthorNameContainingIgnoreCaseAndDescriptionContainingIgnoreCase(
+                    searchQueryParam.getYear(), searchQueryParam.getAuthorName(), searchQueryParam.getPlot()
+            ));
+        }
+        else if((searchQueryParam.getTitle() != null && !searchQueryParam.getTitle().isEmpty()) && (searchQueryParam.getAuthorName() != null && !searchQueryParam.getAuthorName().isEmpty())){
             result.setBooks(bookRepository.getBooksByAuthorNameContainingIgnoreCaseAndTitleContainingIgnoreCase(searchQueryParam.getAuthorName(), searchQueryParam.getTitle()));
         }
         else if((searchQueryParam.getAuthorName() != null || !searchQueryParam.getAuthorName().isEmpty()) && searchQueryParam.getPlot() != null) {
             result.setBooks(bookRepository.getBooksByDescriptionContainingIgnoreCaseAndAuthorNameContainingIgnoreCase(searchQueryParam.getPlot(), searchQueryParam.getAuthorName()));
+        }
+        else if((searchQueryParam.getAuthorName() != null && !searchQueryParam.getAuthorName().isEmpty()) && (searchQueryParam.getYear() != 0)) {
+            result.setBooks(bookRepository.getBooksByPublicationYearEqualsAndAuthorNameContainingIgnoreCase(searchQueryParam.getYear(), searchQueryParam.getAuthorName()));
         }
         else if(searchQueryParam.getTitle() != null && !searchQueryParam.getTitle().isEmpty()) {
            result.setBooks(bookRepository.getBooksByTitleContainingIgnoreCase(searchQueryParam.getTitle()));

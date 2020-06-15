@@ -36,10 +36,6 @@ public class QueryHelper {
             params.put(Constants.SEARCH_FIELD_KEY, Constants.SEARCH_FIELD_TITLE);
             params.put(Constants.Query, searchQueryParam.getTitle());
         }
-        else if(!(searchQueryParam.getAuthorName().isEmpty() && searchQueryParam.getPlot() == null)) {
-            params.put(Constants.SEARCH_FIELD_KEY, Constants.SEARCH_FIELD_AUTHOR);
-            params.put(Constants.Query, searchQueryParam.getAuthorName());
-        }
         try {
             params.put(Constants.KEY_NAME, PropertiesLoader.loadProperties("application.properties").getProperty("goodreads.key"));
 
