@@ -31,15 +31,6 @@ public class SearchImplTest {
     @Mock
     private GoodReadSearchImpl goodReadSearch;
 
-    @MockBean
-    private QueryHelper queryHelper;
-
-    @MockBean
-    private RestAPITemplate restAPITemplate;
-
-    @MockBean
-    private GoodReadResponseProcessor goodReadResponseProcessor;
-
     private SearchQueryParam searchQueryParam;
 
     @Before
