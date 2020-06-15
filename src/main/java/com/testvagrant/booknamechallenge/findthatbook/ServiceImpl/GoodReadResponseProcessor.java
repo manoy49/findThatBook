@@ -28,7 +28,7 @@ public class GoodReadResponseProcessor {
     XmlParser xmlParser;
 
     public BookList saveAndProcessResults(List<String> xmlResponses, String... otherParam) throws BookNotFoundException {
-        BookList result = new BookList();
+        BookList result = BookList.builder().build();
         List books = new ArrayList();
         ArrayList finalBookIds = finalBookIDs(xmlResponses);
 
@@ -50,12 +50,12 @@ public class GoodReadResponseProcessor {
                     authorInfo = authors instanceof JSONArray ? (JSONObject) ((JSONArray)authors).get(0)
                             : (JSONObject) authors;
 
-                    Author author = new Author();
+                    Author author = Author.builder().build();
                     author.setAuthorGRId(authorInfo.getInt("id"));
                     author.setLink(authorInfo.get("link").toString());
                     author.setName(authorInfo.get("name").toString());
 
-                    Book book = new Book();
+                    Book book = Book.builder().build();
 
                     book.setTitle(bookInfo.get("title").toString());
                     book.setBestBookId(bookInfo.getInt("id"));

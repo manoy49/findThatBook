@@ -31,9 +31,16 @@ public class GoodReadSearchImpl implements Search {
 
     @Override
     public BookList findBooks(SearchQueryParam searchQueryParam) throws BookNotFoundException {
+
         BookList result;
+
+        /* query for goodRead api */
         Map params = queryHelper.processQueryParams(searchQueryParam);
+
+        /* checking for book in local DB first */
         result = getBooksFromLocal(searchQueryParam);
+
+        // good read api call in case of empty results
         if(result.getBooks().isEmpty() || result.getBooks() == null)
         {
             if(searchQueryParam.getPlot() != null)
@@ -43,7 +50,9 @@ public class GoodReadSearchImpl implements Search {
             else
                 return getResultsFromBookReadApi(params);
         }
+
         log.info(" ====== Getting Results from local database ====== ");
+
         return result;
     }
 
@@ -64,18 +73,23 @@ public class GoodReadSearchImpl implements Search {
                 }
             }
         }
+
         else {
             responses.add(restAPITemplate.getSearchResults(params));
         }
+
         log.info(" ======= Getting data from good read api ======= ");
+
         if(otherParam.length > 0) {
             return readResponseProcessor.saveAndProcessResults(responses, otherParam[0]);
         }
+
+        // saving the books in db for future and getting book list
         return readResponseProcessor.saveAndProcessResults(responses);
     }
 
     private BookList getBooksFromLocal(SearchQueryParam searchQueryParam) {
-        BookList result = new BookList();
+        BookList result = BookList.builder().build();
 
         if((searchQueryParam.getTitle() != null && !searchQueryParam.getTitle().isEmpty()) && (searchQueryParam.getAuthorName() != null && !searchQueryParam.getAuthorName().isEmpty())
             && (searchQueryParam.getYear() != 0) && searchQueryParam.getPlot() != null) {
