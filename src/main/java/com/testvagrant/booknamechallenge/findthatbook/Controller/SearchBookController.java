@@ -24,23 +24,19 @@ public class SearchBookController {
     Search search;
 
     @GetMapping("find")
-    public ResponseEntity findBook(@RequestParam(required = false) String title,
+    public ResponseEntity<BookList> findBook(@RequestParam(required = false) String title,
                                    @RequestParam String author,
                                    @RequestParam(required = false) String plot,
                                    @RequestParam(required = false) Integer year) throws Exception {
-        BookList result;
-        try {
            SearchQueryParam searchQueryParam =  new SearchQueryParam();
            searchQueryParam.setTitle(title);
            searchQueryParam.setAuthorName(author);
            searchQueryParam.setPlot(plot);
            if(year != null)
                searchQueryParam.setYear(year);
-           result = search.findBooks(searchQueryParam);
+           BookList result = search.findBooks(searchQueryParam);
            log.info("Result of the " + searchQueryParam.toString() +" query is : " + result.getBooks().toString());
-        }catch (Exception e) {
-            throw e;
-        }
+
         return new ResponseEntity(result, HttpStatus.ACCEPTED);
     }
 }

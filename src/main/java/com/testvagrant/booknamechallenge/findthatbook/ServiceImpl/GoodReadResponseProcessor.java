@@ -88,7 +88,7 @@ public class GoodReadResponseProcessor {
                         else if(otherParam[0].toLowerCase().contains(book.getDescription().toLowerCase())) {
                             books.add(book);
                         }
-                        else if(book.getPublicationYear() == Integer.valueOf(otherParam[0])) {
+                        else if(otherParam[0].matches("^(16|20)\\d{2}$\n") && (book.getPublicationYear() == Integer.valueOf(otherParam[0]))) {
                             books.add(book);
                         }
                         else {
