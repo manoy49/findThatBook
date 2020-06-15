@@ -1,7 +1,7 @@
-package com.testvagrant.booknamechallenge.findthatbook.service;
+package com.testvagrant.booknamechallenge.findthatbook.Service;
 
-import com.testvagrant.booknamechallenge.findthatbook.models.BookList;
-import com.testvagrant.booknamechallenge.findthatbook.models.SearchQueryParam;
+import com.testvagrant.booknamechallenge.findthatbook.Models.BookList;
+import com.testvagrant.booknamechallenge.findthatbook.Models.SearchQueryParam;
 import org.springframework.stereotype.Component;
 
 @Component

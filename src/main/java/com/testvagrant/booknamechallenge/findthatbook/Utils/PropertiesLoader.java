@@ -1,4 +1,4 @@
-package com.testvagrant.booknamechallenge.findthatbook.utils;
+package com.testvagrant.booknamechallenge.findthatbook.Utils;
 
 import org.springframework.stereotype.Component;
 

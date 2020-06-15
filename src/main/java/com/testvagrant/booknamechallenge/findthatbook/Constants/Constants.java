@@ -1,4 +1,4 @@
-package com.testvagrant.booknamechallenge.findthatbook.constants;
+package com.testvagrant.booknamechallenge.findthatbook.Constants;
 
 public class Constants {
 

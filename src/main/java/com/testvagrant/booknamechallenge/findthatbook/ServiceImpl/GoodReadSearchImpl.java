@@ -1,14 +1,16 @@
-package com.testvagrant.booknamechallenge.findthatbook.serviceImpl;
+package com.testvagrant.booknamechallenge.findthatbook.ServiceImpl;
 
-import com.testvagrant.booknamechallenge.findthatbook.constants.Constants;
-import com.testvagrant.booknamechallenge.findthatbook.models.BookList;
-import com.testvagrant.booknamechallenge.findthatbook.models.SearchQueryParam;
-import com.testvagrant.booknamechallenge.findthatbook.repository.BookRepository;
-import com.testvagrant.booknamechallenge.findthatbook.service.Search;
-import com.testvagrant.booknamechallenge.findthatbook.utils.BookNotFoundException;
-import com.testvagrant.booknamechallenge.findthatbook.utils.QueryHelper;
-import com.testvagrant.booknamechallenge.findthatbook.utils.RestAPITemplate;
+import com.testvagrant.booknamechallenge.findthatbook.Constants.Constants;
+import com.testvagrant.booknamechallenge.findthatbook.Models.BookList;
+import com.testvagrant.booknamechallenge.findthatbook.Models.SearchQueryParam;
+import com.testvagrant.booknamechallenge.findthatbook.Repository.BookRepository;
+import com.testvagrant.booknamechallenge.findthatbook.Service.Search;
+import com.testvagrant.booknamechallenge.findthatbook.Utils.BookNotFoundException;
+import com.testvagrant.booknamechallenge.findthatbook.Utils.QueryHelper;
+import com.testvagrant.booknamechallenge.findthatbook.Utils.RestAPITemplate;
 import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -47,7 +49,7 @@ public class GoodReadSearchImpl implements Search {
         return result;
     }
 
-    private BookList getResultsFromBookReadApi(Map params, String... otherParam) throws BookNotFoundException {
+    private BookList getResultsFromBookReadApi(Map params, String... otherParam) throws Exception {
         List<String> responses = new ArrayList<>();
 
         if(params.containsKey(Constants.MULTIPLE) && (Boolean) params.get(Constants.MULTIPLE)) {
@@ -69,7 +71,11 @@ public class GoodReadSearchImpl implements Search {
         }
         log.info(" ======= Getting data from good read api ======= ");
         if(otherParam.length > 0) {
-            return readResponseProcessor.saveAndProcessResults(responses, otherParam[0]);
+            try {
+                return readResponseProcessor.saveAndProcessResults(responses, otherParam[0]);
+            }catch (BookNotFoundException e) {
+                throw e;
+            }
         }
         return readResponseProcessor.saveAndProcessResults(responses);
     }

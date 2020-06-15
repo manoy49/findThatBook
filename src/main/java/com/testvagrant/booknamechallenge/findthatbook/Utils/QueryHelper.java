@@ -1,7 +1,7 @@
-package com.testvagrant.booknamechallenge.findthatbook.utils;
+package com.testvagrant.booknamechallenge.findthatbook.Utils;
 
-import com.testvagrant.booknamechallenge.findthatbook.constants.Constants;
-import com.testvagrant.booknamechallenge.findthatbook.models.SearchQueryParam;
+import com.testvagrant.booknamechallenge.findthatbook.Constants.Constants;
+import com.testvagrant.booknamechallenge.findthatbook.Models.SearchQueryParam;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
