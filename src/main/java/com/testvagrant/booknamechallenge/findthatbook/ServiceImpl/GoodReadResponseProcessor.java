@@ -91,9 +91,6 @@ public class GoodReadResponseProcessor {
                         else if(otherParam[0].matches("^(16|20)\\d{2}$\n") && (book.getPublicationYear() == Integer.valueOf(otherParam[0]))) {
                             books.add(book);
                         }
-                        else {
-                            throw new BookNotFoundException("Can not get book with given information. Try and Recall more. ");
-                        }
                     }
                     else {
                         books.add(book);
@@ -102,7 +99,9 @@ public class GoodReadResponseProcessor {
 
             }
         }
-
+        if(books.size() == 0) {
+            throw new BookNotFoundException("Can not get book with given information. Try and Recall more. ");
+        }
         result.setBooks(books);
         return result;
     }
