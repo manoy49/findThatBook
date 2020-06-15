@@ -1,6 +1,6 @@
-package com.testvagrant.booknamechallenge.findthatbook.Repository;
+package com.testvagrant.booknamechallenge.findthatbook.repository;
 
-import com.testvagrant.booknamechallenge.findthatbook.Models.Book;
+import com.testvagrant.booknamechallenge.findthatbook.models.Book;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Component;
 

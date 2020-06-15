@@ -1,11 +1,9 @@
-package com.testvagrant.booknamechallenge.findthatbook.Controller;
+package com.testvagrant.booknamechallenge.findthatbook.controller;
 
-import com.testvagrant.booknamechallenge.findthatbook.Models.BookList;
-import com.testvagrant.booknamechallenge.findthatbook.Models.SearchQueryParam;
-import com.testvagrant.booknamechallenge.findthatbook.Service.Search;
+import com.testvagrant.booknamechallenge.findthatbook.models.BookList;
+import com.testvagrant.booknamechallenge.findthatbook.models.SearchQueryParam;
+import com.testvagrant.booknamechallenge.findthatbook.service.Search;
 import lombok.extern.slf4j.Slf4j;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -28,19 +26,16 @@ public class SearchBookController {
                                    @RequestParam String author,
                                    @RequestParam(required = false) String plot,
                                    @RequestParam(required = false) Integer year) throws Exception {
-        BookList result;
-        try {
+
            SearchQueryParam searchQueryParam =  new SearchQueryParam();
            searchQueryParam.setTitle(title);
            searchQueryParam.setAuthorName(author);
            searchQueryParam.setPlot(plot);
            if(year != null)
                searchQueryParam.setYear(year);
-           result = search.findBooks(searchQueryParam);
+           BookList result = search.findBooks(searchQueryParam);
            log.info("Result of the " + searchQueryParam.toString() +" query is : " + result.getBooks().toString());
-        }catch (Exception e) {
-            throw e;
-        }
-        return new ResponseEntity(result, HttpStatus.ACCEPTED);
+
+           return new ResponseEntity(result, HttpStatus.ACCEPTED);
     }
 }

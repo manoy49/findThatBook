@@ -69,10 +69,10 @@
 ""2020-06-15 00:07:21 - Opened connection [connectionId{localValue:2, serverValue:48}] to localhost:27017
 ""2020-06-15 00:07:22 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: org.json.JSONObject cannot be cast to org.json.JSONArray] with root cause
 "java.lang.ClassCastException: org.json.JSONObject cannot be cast to org.json.JSONArray
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadResponseProcessor.saveAndProcessResults(GoodReadResponseProcessor.java:47)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadSearchImpl.getResultsFromBookReadApi(GoodReadSearchImpl.java:53)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:29)
-	at com.testvagrant.booknamechallenge.findthatbook.Controller.SearchBookController.findBook(SearchBookController.java:40)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadResponseProcessor.saveAndProcessResults(GoodReadResponseProcessor.java:47)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadSearchImpl.getResultsFromBookReadApi(GoodReadSearchImpl.java:53)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:29)
+	at com.testvagrant.booknamechallenge.findthatbook.controller.SearchBookController.findBook(SearchBookController.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -150,10 +150,10 @@
 ""2020-06-15 00:10:41 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.json.JSONException: JSONObject["isbn"] is not an int.] with root cause
 "org.json.JSONException: JSONObject["isbn"] is not an int.
 	at org.json.JSONObject.getInt(JSONObject.java:603)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadResponseProcessor.saveAndProcessResults(GoodReadResponseProcessor.java:64)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadSearchImpl.getResultsFromBookReadApi(GoodReadSearchImpl.java:53)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:29)
-	at com.testvagrant.booknamechallenge.findthatbook.Controller.SearchBookController.findBook(SearchBookController.java:40)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadResponseProcessor.saveAndProcessResults(GoodReadResponseProcessor.java:64)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadSearchImpl.getResultsFromBookReadApi(GoodReadSearchImpl.java:53)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:29)
+	at com.testvagrant.booknamechallenge.findthatbook.controller.SearchBookController.findBook(SearchBookController.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -231,10 +231,10 @@
 ""2020-06-15 00:13:07 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.json.JSONException: JSONObject["isbn"] is not an int.] with root cause
 "org.json.JSONException: JSONObject["isbn"] is not an int.
 	at org.json.JSONObject.getInt(JSONObject.java:603)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadResponseProcessor.saveAndProcessResults(GoodReadResponseProcessor.java:65)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadSearchImpl.getResultsFromBookReadApi(GoodReadSearchImpl.java:53)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:29)
-	at com.testvagrant.booknamechallenge.findthatbook.Controller.SearchBookController.findBook(SearchBookController.java:40)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadResponseProcessor.saveAndProcessResults(GoodReadResponseProcessor.java:65)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadSearchImpl.getResultsFromBookReadApi(GoodReadSearchImpl.java:53)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:29)
+	at com.testvagrant.booknamechallenge.findthatbook.controller.SearchBookController.findBook(SearchBookController.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -312,10 +312,10 @@
 ""2020-06-15 00:13:49 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.json.JSONException: JSONObject["isbn"] is not an int.] with root cause
 "org.json.JSONException: JSONObject["isbn"] is not an int.
 	at org.json.JSONObject.getInt(JSONObject.java:603)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadResponseProcessor.saveAndProcessResults(GoodReadResponseProcessor.java:66)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadSearchImpl.getResultsFromBookReadApi(GoodReadSearchImpl.java:53)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:29)
-	at com.testvagrant.booknamechallenge.findthatbook.Controller.SearchBookController.findBook(SearchBookController.java:40)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadResponseProcessor.saveAndProcessResults(GoodReadResponseProcessor.java:66)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadSearchImpl.getResultsFromBookReadApi(GoodReadSearchImpl.java:53)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:29)
+	at com.testvagrant.booknamechallenge.findthatbook.controller.SearchBookController.findBook(SearchBookController.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -430,10 +430,10 @@
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
 	at com.sun.proxy.$Proxy67.findBookByBestBookId(Unknown Source)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadResponseProcessor.saveAndProcessResults(GoodReadResponseProcessor.java:70)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadSearchImpl.getResultsFromBookReadApi(GoodReadSearchImpl.java:53)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:29)
-	at com.testvagrant.booknamechallenge.findthatbook.Controller.SearchBookController.findBook(SearchBookController.java:40)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadResponseProcessor.saveAndProcessResults(GoodReadResponseProcessor.java:70)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadSearchImpl.getResultsFromBookReadApi(GoodReadSearchImpl.java:53)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:29)
+	at com.testvagrant.booknamechallenge.findthatbook.controller.SearchBookController.findBook(SearchBookController.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -511,10 +511,10 @@
 ""2020-06-15 00:24:30 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.json.JSONException: JSONObject["publication_year"] is not an int.] with root cause
 "org.json.JSONException: JSONObject["publication_year"] is not an int.
 	at org.json.JSONObject.getInt(JSONObject.java:603)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadResponseProcessor.saveAndProcessResults(GoodReadResponseProcessor.java:67)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadSearchImpl.getResultsFromBookReadApi(GoodReadSearchImpl.java:53)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:29)
-	at com.testvagrant.booknamechallenge.findthatbook.Controller.SearchBookController.findBook(SearchBookController.java:40)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadResponseProcessor.saveAndProcessResults(GoodReadResponseProcessor.java:67)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadSearchImpl.getResultsFromBookReadApi(GoodReadSearchImpl.java:53)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:29)
+	at com.testvagrant.booknamechallenge.findthatbook.controller.SearchBookController.findBook(SearchBookController.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -592,10 +592,10 @@
 ""2020-06-15 00:27:57 - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'author' is not present]
 ""2020-06-15 00:28:30 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 "java.lang.NullPointerException: null
-	at com.testvagrant.booknamechallenge.findthatbook.Utils.QueryHelper.setSearchFields(QueryHelper.java:27)
-	at com.testvagrant.booknamechallenge.findthatbook.Utils.QueryHelper.processQueryParams(QueryHelper.java:16)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:28)
-	at com.testvagrant.booknamechallenge.findthatbook.Controller.SearchBookController.findBook(SearchBookController.java:40)
+	at com.testvagrant.booknamechallenge.findthatbook.utils.QueryHelper.setSearchFields(QueryHelper.java:27)
+	at com.testvagrant.booknamechallenge.findthatbook.utils.QueryHelper.processQueryParams(QueryHelper.java:16)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:28)
+	at com.testvagrant.booknamechallenge.findthatbook.controller.SearchBookController.findBook(SearchBookController.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -671,9 +671,9 @@
 ""2020-06-15 00:30:56 - Completed initialization in 4 ms
 ""2020-06-15 00:30:56 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 "java.lang.NullPointerException: null
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadSearchImpl.getResultsFromBookReadApi(GoodReadSearchImpl.java:36)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:29)
-	at com.testvagrant.booknamechallenge.findthatbook.Controller.SearchBookController.findBook(SearchBookController.java:40)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadSearchImpl.getResultsFromBookReadApi(GoodReadSearchImpl.java:36)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:29)
+	at com.testvagrant.booknamechallenge.findthatbook.controller.SearchBookController.findBook(SearchBookController.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -750,10 +750,10 @@
 ""2020-06-15 00:32:23 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.json.JSONException: JSONObject["isbn"] is not an int.] with root cause
 "org.json.JSONException: JSONObject["isbn"] is not an int.
 	at org.json.JSONObject.getInt(JSONObject.java:603)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadResponseProcessor.saveAndProcessResults(GoodReadResponseProcessor.java:64)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadSearchImpl.getResultsFromBookReadApi(GoodReadSearchImpl.java:53)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:29)
-	at com.testvagrant.booknamechallenge.findthatbook.Controller.SearchBookController.findBook(SearchBookController.java:40)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadResponseProcessor.saveAndProcessResults(GoodReadResponseProcessor.java:64)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadSearchImpl.getResultsFromBookReadApi(GoodReadSearchImpl.java:53)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:29)
+	at com.testvagrant.booknamechallenge.findthatbook.controller.SearchBookController.findBook(SearchBookController.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -831,10 +831,10 @@
 ""2020-06-15 00:34:54 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.json.JSONException: JSONObject["isbn"] is not an int.] with root cause
 "org.json.JSONException: JSONObject["isbn"] is not an int.
 	at org.json.JSONObject.getInt(JSONObject.java:603)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadResponseProcessor.saveAndProcessResults(GoodReadResponseProcessor.java:65)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadSearchImpl.getResultsFromBookReadApi(GoodReadSearchImpl.java:53)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:29)
-	at com.testvagrant.booknamechallenge.findthatbook.Controller.SearchBookController.findBook(SearchBookController.java:40)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadResponseProcessor.saveAndProcessResults(GoodReadResponseProcessor.java:65)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadSearchImpl.getResultsFromBookReadApi(GoodReadSearchImpl.java:53)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:29)
+	at com.testvagrant.booknamechallenge.findthatbook.controller.SearchBookController.findBook(SearchBookController.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1107,10 +1107,10 @@
 ""2020-06-15 01:38:49 - Completed initialization in 6 ms
 ""2020-06-15 01:38:49 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 "java.lang.NullPointerException: null
-	at com.testvagrant.booknamechallenge.findthatbook.Utils.QueryHelper.setSearchFields(QueryHelper.java:27)
-	at com.testvagrant.booknamechallenge.findthatbook.Utils.QueryHelper.processQueryParams(QueryHelper.java:16)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:36)
-	at com.testvagrant.booknamechallenge.findthatbook.Controller.SearchBookController.findBook(SearchBookController.java:43)
+	at com.testvagrant.booknamechallenge.findthatbook.utils.QueryHelper.setSearchFields(QueryHelper.java:27)
+	at com.testvagrant.booknamechallenge.findthatbook.utils.QueryHelper.processQueryParams(QueryHelper.java:16)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:36)
+	at com.testvagrant.booknamechallenge.findthatbook.controller.SearchBookController.findBook(SearchBookController.java:43)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1185,10 +1185,10 @@
 ""2020-06-15 01:39:56 - Completed initialization in 5 ms
 ""2020-06-15 01:39:56 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 "java.lang.NullPointerException: null
-	at com.testvagrant.booknamechallenge.findthatbook.Utils.QueryHelper.setSearchFields(QueryHelper.java:27)
-	at com.testvagrant.booknamechallenge.findthatbook.Utils.QueryHelper.processQueryParams(QueryHelper.java:16)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:36)
-	at com.testvagrant.booknamechallenge.findthatbook.Controller.SearchBookController.findBook(SearchBookController.java:43)
+	at com.testvagrant.booknamechallenge.findthatbook.utils.QueryHelper.setSearchFields(QueryHelper.java:27)
+	at com.testvagrant.booknamechallenge.findthatbook.utils.QueryHelper.processQueryParams(QueryHelper.java:16)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:36)
+	at com.testvagrant.booknamechallenge.findthatbook.controller.SearchBookController.findBook(SearchBookController.java:43)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1241,10 +1241,10 @@
 	at java.lang.Thread.run(Thread.java:748)
 "2020-06-15 01:42:50 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 "java.lang.NullPointerException: null
-	at com.testvagrant.booknamechallenge.findthatbook.Utils.QueryHelper.setSearchFields(QueryHelper.java:27)
-	at com.testvagrant.booknamechallenge.findthatbook.Utils.QueryHelper.processQueryParams(QueryHelper.java:16)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:36)
-	at com.testvagrant.booknamechallenge.findthatbook.Controller.SearchBookController.findBook(SearchBookController.java:43)
+	at com.testvagrant.booknamechallenge.findthatbook.utils.QueryHelper.setSearchFields(QueryHelper.java:27)
+	at com.testvagrant.booknamechallenge.findthatbook.utils.QueryHelper.processQueryParams(QueryHelper.java:16)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:36)
+	at com.testvagrant.booknamechallenge.findthatbook.controller.SearchBookController.findBook(SearchBookController.java:43)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1319,10 +1319,10 @@
 ""2020-06-15 01:43:04 - Completed initialization in 4 ms
 ""2020-06-15 01:43:04 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 "java.lang.NullPointerException: null
-	at com.testvagrant.booknamechallenge.findthatbook.Utils.QueryHelper.setSearchFields(QueryHelper.java:39)
-	at com.testvagrant.booknamechallenge.findthatbook.Utils.QueryHelper.processQueryParams(QueryHelper.java:16)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:36)
-	at com.testvagrant.booknamechallenge.findthatbook.Controller.SearchBookController.findBook(SearchBookController.java:43)
+	at com.testvagrant.booknamechallenge.findthatbook.utils.QueryHelper.setSearchFields(QueryHelper.java:39)
+	at com.testvagrant.booknamechallenge.findthatbook.utils.QueryHelper.processQueryParams(QueryHelper.java:16)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:36)
+	at com.testvagrant.booknamechallenge.findthatbook.controller.SearchBookController.findBook(SearchBookController.java:43)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1576,9 +1576,9 @@
 ""2020-06-15 01:59:30 -  ======= Getting data from good read api ======= 
 ""2020-06-15 01:59:32 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.Exception: Can not get plot from the info given. Please recall and try again. ] with root cause
 "java.lang.Exception: Can not get plot from the info given. Please recall and try again. 
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadSearchImpl.getResultsFromBookReadApi(GoodReadSearchImpl.java:77)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:42)
-	at com.testvagrant.booknamechallenge.findthatbook.Controller.SearchBookController.findBook(SearchBookController.java:43)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadSearchImpl.getResultsFromBookReadApi(GoodReadSearchImpl.java:77)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:42)
+	at com.testvagrant.booknamechallenge.findthatbook.controller.SearchBookController.findBook(SearchBookController.java:43)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1658,7 +1658,7 @@
 ""2020-06-15 02:04:44 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 "java.lang.NullPointerException: null
 	at java.lang.Throwable.setStackTrace(Throwable.java:865)
-	at com.testvagrant.booknamechallenge.findthatbook.Controller.SearchBookController.findBook(SearchBookController.java:45)
+	at com.testvagrant.booknamechallenge.findthatbook.controller.SearchBookController.findBook(SearchBookController.java:45)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1736,9 +1736,9 @@
 ""2020-06-15 02:10:56 -  ======= Getting data from good read api ======= 
 ""2020-06-15 02:10:56 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.Exception: Can not get plot from the info given. Please recall and try again. ] with root cause
 "java.lang.Exception: Can not get plot from the info given. Please recall and try again. 
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadSearchImpl.getResultsFromBookReadApi(GoodReadSearchImpl.java:75)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:42)
-	at com.testvagrant.booknamechallenge.findthatbook.Controller.SearchBookController.findBook(SearchBookController.java:44)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadSearchImpl.getResultsFromBookReadApi(GoodReadSearchImpl.java:75)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:42)
+	at com.testvagrant.booknamechallenge.findthatbook.controller.SearchBookController.findBook(SearchBookController.java:44)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1818,11 +1818,11 @@
 "java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
 	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
 	at java.util.ArrayList.get(ArrayList.java:433)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadResponseProcessor.finalBookIDs(GoodReadResponseProcessor.java:111)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadResponseProcessor.saveAndProcessResults(GoodReadResponseProcessor.java:33)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadSearchImpl.getResultsFromBookReadApi(GoodReadSearchImpl.java:74)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:43)
-	at com.testvagrant.booknamechallenge.findthatbook.Controller.SearchBookController.findBook(SearchBookController.java:44)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadResponseProcessor.finalBookIDs(GoodReadResponseProcessor.java:111)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadResponseProcessor.saveAndProcessResults(GoodReadResponseProcessor.java:33)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadSearchImpl.getResultsFromBookReadApi(GoodReadSearchImpl.java:74)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:43)
+	at com.testvagrant.booknamechallenge.findthatbook.controller.SearchBookController.findBook(SearchBookController.java:44)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1898,12 +1898,12 @@
 ""2020-06-15 02:18:35 - Completed initialization in 5 ms
 ""2020-06-15 02:18:35 - Opened connection [connectionId{localValue:2, serverValue:127}] to localhost:27017
 ""2020-06-15 02:18:39 -  ======= Getting data from good read api ======= 
-""2020-06-15 02:18:41 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.testvagrant.booknamechallenge.findthatbook.Utils.BookNotFoundException: Can not get book with given information. Try and Recall more. ] with root cause
-"com.testvagrant.booknamechallenge.findthatbook.Utils.BookNotFoundException: Can not get book with given information. Try and Recall more. 
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadResponseProcessor.saveAndProcessResults(GoodReadResponseProcessor.java:92)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadSearchImpl.getResultsFromBookReadApi(GoodReadSearchImpl.java:74)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:43)
-	at com.testvagrant.booknamechallenge.findthatbook.Controller.SearchBookController.findBook(SearchBookController.java:44)
+""2020-06-15 02:18:41 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.testvagrant.booknamechallenge.findthatbook.utils.BookNotFoundException: Can not get book with given information. Try and Recall more. ] with root cause
+"com.testvagrant.booknamechallenge.findthatbook.utils.BookNotFoundException: Can not get book with given information. Try and Recall more.
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadResponseProcessor.saveAndProcessResults(GoodReadResponseProcessor.java:92)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadSearchImpl.getResultsFromBookReadApi(GoodReadSearchImpl.java:74)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:43)
+	at com.testvagrant.booknamechallenge.findthatbook.controller.SearchBookController.findBook(SearchBookController.java:44)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1979,8 +1979,8 @@
 ""2020-06-15 02:21:04 - Completed initialization in 5 ms
 ""2020-06-15 02:21:04 - Opened connection [connectionId{localValue:2, serverValue:129}] to localhost:27017
 ""2020-06-15 02:21:09 -  ======= Getting data from good read api ======= 
-""2020-06-15 02:21:10 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.testvagrant.booknamechallenge.findthatbook.Utils.BookNotFoundException: Can not get book with given information. Try and Recall more. ] with root cause
-"com.testvagrant.booknamechallenge.findthatbook.Utils.BookNotFoundException: Can not get book with given information. Try and Recall more. 
+""2020-06-15 02:21:10 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.testvagrant.booknamechallenge.findthatbook.utils.BookNotFoundException: Can not get book with given information. Try and Recall more. ] with root cause
+"com.testvagrant.booknamechallenge.findthatbook.utils.BookNotFoundException: Can not get book with given information. Try and Recall more.
 "2020-06-15 02:23:16 - Shutting down ExecutorService 'applicationTaskExecutor'
 ""2020-06-15 02:23:16 - Closed connection [connectionId{localValue:2, serverValue:129}] to localhost:27017 because the pool has been closed.
 ""2020-06-15 02:23:19 - Starting FindthatbookApplication on Manishas-MBP with PID 40507 (/Users/manisha.kumari/Desktop/findthatbook/target/classes started by manisha.kumari in /Users/manisha.kumari/Desktop/findthatbook)
@@ -2006,8 +2006,8 @@
 ""2020-06-15 02:23:24 - Completed initialization in 5 ms
 ""2020-06-15 02:23:24 - Opened connection [connectionId{localValue:2, serverValue:131}] to localhost:27017
 ""2020-06-15 02:23:28 -  ======= Getting data from good read api ======= 
-""2020-06-15 02:23:30 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.testvagrant.booknamechallenge.findthatbook.Utils.BookNotFoundException: Can not get book with given information. Try and Recall more. ] with root cause
-"com.testvagrant.booknamechallenge.findthatbook.Utils.BookNotFoundException: Can not get book with given information. Try and Recall more. 
+""2020-06-15 02:23:30 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.testvagrant.booknamechallenge.findthatbook.utils.BookNotFoundException: Can not get book with given information. Try and Recall more. ] with root cause
+"com.testvagrant.booknamechallenge.findthatbook.utils.BookNotFoundException: Can not get book with given information. Try and Recall more.
 "2020-06-15 02:28:05 - Shutting down ExecutorService 'applicationTaskExecutor'
 ""2020-06-15 02:28:05 - Closed connection [connectionId{localValue:2, serverValue:131}] to localhost:27017 because the pool has been closed.
 ""2020-06-15 02:28:08 - Starting FindthatbookApplication on Manishas-MBP with PID 40571 (/Users/manisha.kumari/Desktop/findthatbook/target/classes started by manisha.kumari in /Users/manisha.kumari/Desktop/findthatbook)
@@ -2033,8 +2033,8 @@
 ""2020-06-15 02:28:17 - Completed initialization in 6 ms
 ""2020-06-15 02:28:17 - Opened connection [connectionId{localValue:2, serverValue:133}] to localhost:27017
 ""2020-06-15 02:28:20 -  ======= Getting data from good read api ======= 
-""2020-06-15 02:28:22 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.testvagrant.booknamechallenge.findthatbook.Utils.BookNotFoundException: Can not get book with given information. Try and Recall more. ] with root cause
-"com.testvagrant.booknamechallenge.findthatbook.Utils.BookNotFoundException: Can not get book with given information. Try and Recall more. 
+""2020-06-15 02:28:22 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.testvagrant.booknamechallenge.findthatbook.utils.BookNotFoundException: Can not get book with given information. Try and Recall more. ] with root cause
+"com.testvagrant.booknamechallenge.findthatbook.utils.BookNotFoundException: Can not get book with given information. Try and Recall more.
 "2020-06-15 02:30:41 - Shutting down ExecutorService 'applicationTaskExecutor'
 ""2020-06-15 02:30:41 - Closed connection [connectionId{localValue:2, serverValue:133}] to localhost:27017 because the pool has been closed.
 ""2020-06-15 02:30:44 - Starting FindthatbookApplication on Manishas-MBP with PID 40594 (/Users/manisha.kumari/Desktop/findthatbook/target/classes started by manisha.kumari in /Users/manisha.kumari/Desktop/findthatbook)
@@ -2060,8 +2060,8 @@
 ""2020-06-15 02:30:49 - Completed initialization in 5 ms
 ""2020-06-15 02:30:49 - Opened connection [connectionId{localValue:2, serverValue:135}] to localhost:27017
 ""2020-06-15 02:30:52 -  ======= Getting data from good read api ======= 
-""2020-06-15 02:30:54 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.testvagrant.booknamechallenge.findthatbook.Utils.BookNotFoundException: Can not get book with given information. Try and Recall more. ] with root cause
-"com.testvagrant.booknamechallenge.findthatbook.Utils.BookNotFoundException: Can not get book with given information. Try and Recall more. 
+""2020-06-15 02:30:54 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.testvagrant.booknamechallenge.findthatbook.utils.BookNotFoundException: Can not get book with given information. Try and Recall more. ] with root cause
+"com.testvagrant.booknamechallenge.findthatbook.utils.BookNotFoundException: Can not get book with given information. Try and Recall more.
 "2020-06-15 02:31:07 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Argument for creating $regex pattern for property 'description' must not be null!] with root cause
 "java.lang.IllegalArgumentException: Argument for creating $regex pattern for property 'description' must not be null!
 	at org.springframework.data.mongodb.repository.query.MongoQueryCreator.addAppropriateLikeRegexTo(MongoQueryCreator.java:358)
@@ -2085,9 +2085,9 @@
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
 	at com.sun.proxy.$Proxy66.getBooksByDescriptionContainingIgnoreCaseAndAuthorNameContainingIgnoreCase(Unknown Source)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadSearchImpl.getBooksFromLocal(GoodReadSearchImpl.java:89)
-	at com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:38)
-	at com.testvagrant.booknamechallenge.findthatbook.Controller.SearchBookController.findBook(SearchBookController.java:36)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadSearchImpl.getBooksFromLocal(GoodReadSearchImpl.java:89)
+	at com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadSearchImpl.findBooks(GoodReadSearchImpl.java:38)
+	at com.testvagrant.booknamechallenge.findthatbook.controller.SearchBookController.findBook(SearchBookController.java:36)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

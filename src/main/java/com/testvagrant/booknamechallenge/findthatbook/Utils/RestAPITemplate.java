@@ -1,6 +1,6 @@
-package com.testvagrant.booknamechallenge.findthatbook.Utils;
+package com.testvagrant.booknamechallenge.findthatbook.utils;
 
-import com.testvagrant.booknamechallenge.findthatbook.Constants.Constants;
+import com.testvagrant.booknamechallenge.findthatbook.constants.Constants;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
@@ -9,7 +9,7 @@ import java.util.Map;
 @Component
 public class RestAPITemplate {
 
-    public String getSearchResults(Map params) throws Exception {
+    public String getSearchResults(Map params) {
         RestTemplate restTemplate = new RestTemplate();
         String param = params.toString().replace("{", "?").replace("}", "").replace(", ", "&");
         String response = restTemplate.getForObject(Constants.GOODREAD_URL + param, String.class);

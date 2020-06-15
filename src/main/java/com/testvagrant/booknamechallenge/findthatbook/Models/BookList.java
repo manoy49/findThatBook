@@ -1,4 +1,4 @@
-package com.testvagrant.booknamechallenge.findthatbook.Models;
+package com.testvagrant.booknamechallenge.findthatbook.models;
 
 import lombok.Data;
 

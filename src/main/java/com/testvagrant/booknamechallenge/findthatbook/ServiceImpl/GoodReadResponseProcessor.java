@@ -1,10 +1,10 @@
-package com.testvagrant.booknamechallenge.findthatbook.ServiceImpl;
+package com.testvagrant.booknamechallenge.findthatbook.serviceImpl;
 
-import com.testvagrant.booknamechallenge.findthatbook.Models.Author;
-import com.testvagrant.booknamechallenge.findthatbook.Models.Book;
-import com.testvagrant.booknamechallenge.findthatbook.Models.BookList;
-import com.testvagrant.booknamechallenge.findthatbook.Repository.BookRepository;
-import com.testvagrant.booknamechallenge.findthatbook.Utils.*;
+import com.testvagrant.booknamechallenge.findthatbook.models.Author;
+import com.testvagrant.booknamechallenge.findthatbook.models.Book;
+import com.testvagrant.booknamechallenge.findthatbook.models.BookList;
+import com.testvagrant.booknamechallenge.findthatbook.repository.BookRepository;
+import com.testvagrant.booknamechallenge.findthatbook.utils.*;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
