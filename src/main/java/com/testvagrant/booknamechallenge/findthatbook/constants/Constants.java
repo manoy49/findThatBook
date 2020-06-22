@@ -1,4 +1,4 @@
-package com.testvagrant.booknamechallenge.findthatbook.Constants;
+package com.testvagrant.booknamechallenge.findthatbook.constants;
 
 public class Constants {
 
@@ -13,5 +13,8 @@ public class Constants {
     public final static String SEARCH_FIELD_TITLE = "title";
     public final static String Query = "q";
     public final static String FILE_WRITER_LOCATION = "/Users/manisha.kumari/Desktop/findthatbook/src/main/resources/TestResponse";
+    public final static String QUERY_REGEX = "^#[a-z]+";
+    public final static String AUTHOR_NAME_REGEX = "^[A-Z][A-Za-z ,.'-]{0,20}+$";
+    public final static String YEAR_REGEX = "(?:17|18|19|20)[0-9]{2}";
 
 }

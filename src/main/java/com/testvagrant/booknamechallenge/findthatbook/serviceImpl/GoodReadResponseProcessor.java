@@ -1,10 +1,11 @@
-package com.testvagrant.booknamechallenge.findthatbook.ServiceImpl;
+package com.testvagrant.booknamechallenge.findthatbook.serviceImpl;
 
-import com.testvagrant.booknamechallenge.findthatbook.Models.Author;
-import com.testvagrant.booknamechallenge.findthatbook.Models.Book;
-import com.testvagrant.booknamechallenge.findthatbook.Models.BookList;
-import com.testvagrant.booknamechallenge.findthatbook.Repository.BookRepository;
-import com.testvagrant.booknamechallenge.findthatbook.Utils.*;
+import com.testvagrant.booknamechallenge.findthatbook.constants.Constants;
+import com.testvagrant.booknamechallenge.findthatbook.model.Author;
+import com.testvagrant.booknamechallenge.findthatbook.model.Book;
+import com.testvagrant.booknamechallenge.findthatbook.model.BookList;
+import com.testvagrant.booknamechallenge.findthatbook.repository.BookRepository;
+import com.testvagrant.booknamechallenge.findthatbook.utils.*;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -88,7 +89,7 @@ public class GoodReadResponseProcessor {
                         else if(otherParam[0].toLowerCase().contains(book.getDescription().toLowerCase())) {
                             books.add(book);
                         }
-                        else if(otherParam[0].matches("^(16|20)\\d{2}$\n") && (book.getPublicationYear() == Integer.valueOf(otherParam[0]))) {
+                        else if(otherParam[0].matches(Constants.YEAR_REGEX) && (book.getPublicationYear() == Integer.valueOf(otherParam[0]))) {
                             books.add(book);
                         }
                     }

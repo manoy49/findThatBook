@@ -1,7 +1,7 @@
-package com.testvagrant.booknamechallenge.findthatbook.Utils;
+package com.testvagrant.booknamechallenge.findthatbook.utils;
 
-import com.testvagrant.booknamechallenge.findthatbook.Constants.Constants;
-import com.testvagrant.booknamechallenge.findthatbook.Models.SearchQueryParam;
+import com.testvagrant.booknamechallenge.findthatbook.constants.Constants;
+import com.testvagrant.booknamechallenge.findthatbook.model.SearchQueryParam;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
@@ -12,11 +12,16 @@ import java.util.Map;
 public class QueryHelper {
 
 
-    public Map processQueryParams(SearchQueryParam searchQueryParam) {
+    public Map processQueryParams(SearchQueryParam searchQueryParam) throws BookNotFoundException {
        Map<String, Object> params = setSearchFields(searchQueryParam);
-       if(params.get(Constants.SEARCH_FIELD_KEY).equals(Constants.SEARCH_FIELD_ALL)) {
-           params.put(Constants.MULTIPLE, true);
+       try {
+           if(params.get(Constants.SEARCH_FIELD_KEY).equals(Constants.SEARCH_FIELD_ALL)) {
+               params.put(Constants.MULTIPLE, true);
+           }
+       }catch (NullPointerException exception) {
+           throw new BookNotFoundException("Sorry! We can not find your book with given data. Please trying adding author name or clear description");
        }
+
        return params;
     }
 

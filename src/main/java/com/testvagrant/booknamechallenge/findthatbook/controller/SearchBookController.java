@@ -1,13 +1,11 @@
-package com.testvagrant.booknamechallenge.findthatbook.Controller;
+package com.testvagrant.booknamechallenge.findthatbook.controller;
 
-import com.testvagrant.booknamechallenge.findthatbook.Models.BookList;
-import com.testvagrant.booknamechallenge.findthatbook.Models.SearchQueryParam;
-import com.testvagrant.booknamechallenge.findthatbook.Service.Search;
+import com.testvagrant.booknamechallenge.findthatbook.model.BookList;
+import com.testvagrant.booknamechallenge.findthatbook.model.SearchQueryParam;
+import com.testvagrant.booknamechallenge.findthatbook.service.Search;
+import com.testvagrant.booknamechallenge.findthatbook.utils.QueryProcessor;
 import lombok.extern.slf4j.Slf4j;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,6 +21,9 @@ public class SearchBookController {
     @Autowired
     Search search;
 
+    @Autowired
+    QueryProcessor queryProcessor;
+
     @GetMapping("find")
     public ResponseEntity<BookList> findBook(@RequestParam(required = false) String title,
                                    @RequestParam String author,
@@ -37,6 +38,12 @@ public class SearchBookController {
            BookList result = search.findBooks(searchQueryParam);
            log.info("Result of the " + searchQueryParam.toString() +" query is : " + result.getBooks().toString());
 
-        return new ResponseEntity(result, HttpStatus.ACCEPTED);
+        return ResponseEntity.accepted().body(result);
+    }
+
+    @GetMapping("findByQuery")
+    public ResponseEntity<BookList> findBookFromQuery(@RequestParam String query) throws Exception {
+        BookList result = search.findBooks(queryProcessor.processQuery(query));
+        return ResponseEntity.accepted().body(result);
     }
 }

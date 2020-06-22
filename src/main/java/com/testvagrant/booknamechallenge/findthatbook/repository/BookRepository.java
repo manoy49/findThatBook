@@ -1,6 +1,6 @@
-package com.testvagrant.booknamechallenge.findthatbook.Repository;
+package com.testvagrant.booknamechallenge.findthatbook.repository;
 
-import com.testvagrant.booknamechallenge.findthatbook.Models.Book;
+import com.testvagrant.booknamechallenge.findthatbook.model.Book;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Component;
 
@@ -17,5 +17,6 @@ public interface BookRepository extends MongoRepository<Book, String> {
     List<Book> getBooksByPublicationYearEqualsAndAuthorNameContainingIgnoreCase(int year, String authorName);
     List<Book> getBooksByPublicationYearEqualsAndAuthorNameContainingIgnoreCaseAndDescriptionContainingIgnoreCaseAndTitleContainingIgnoreCase(int year, String authorName, String description, String title);
     List<Book> getBooksByPublicationYearEqualsAndAuthorNameContainingIgnoreCaseAndDescriptionContainingIgnoreCase(int year, String authorName, String description);
+    List<Book> getBooksByPublicationYearEquals(int year);
 
 }

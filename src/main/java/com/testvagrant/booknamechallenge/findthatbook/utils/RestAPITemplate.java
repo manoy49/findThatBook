@@ -1,6 +1,6 @@
-package com.testvagrant.booknamechallenge.findthatbook.Utils;
+package com.testvagrant.booknamechallenge.findthatbook.utils;
 
-import com.testvagrant.booknamechallenge.findthatbook.Constants.Constants;
+import com.testvagrant.booknamechallenge.findthatbook.constants.Constants;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 

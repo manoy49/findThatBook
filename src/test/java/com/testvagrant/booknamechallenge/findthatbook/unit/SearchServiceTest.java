@@ -2,13 +2,12 @@ package com.testvagrant.booknamechallenge.findthatbook.unit;
 
 import static org.mockito.Mockito.*;
 
-import com.testvagrant.booknamechallenge.findthatbook.Constants.Constants;
-import com.testvagrant.booknamechallenge.findthatbook.Models.Author;
-import com.testvagrant.booknamechallenge.findthatbook.Models.Book;
-import com.testvagrant.booknamechallenge.findthatbook.Models.BookList;
-import com.testvagrant.booknamechallenge.findthatbook.Models.SearchQueryParam;
-import com.testvagrant.booknamechallenge.findthatbook.Service.Search;
-import com.testvagrant.booknamechallenge.findthatbook.Utils.BookNotFoundException;
+import com.testvagrant.booknamechallenge.findthatbook.model.Author;
+import com.testvagrant.booknamechallenge.findthatbook.model.Book;
+import com.testvagrant.booknamechallenge.findthatbook.model.BookList;
+import com.testvagrant.booknamechallenge.findthatbook.model.SearchQueryParam;
+import com.testvagrant.booknamechallenge.findthatbook.service.Search;
+import com.testvagrant.booknamechallenge.findthatbook.utils.BookNotFoundException;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

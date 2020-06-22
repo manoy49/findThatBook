@@ -1,4 +1,4 @@
-package com.testvagrant.booknamechallenge.findthatbook.Utils;
+package com.testvagrant.booknamechallenge.findthatbook.utils;
 
 public class BookNotFoundException extends Exception {
     public BookNotFoundException(String err) {

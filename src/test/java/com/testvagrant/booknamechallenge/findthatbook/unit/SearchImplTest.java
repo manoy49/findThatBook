@@ -1,26 +1,20 @@
 package com.testvagrant.booknamechallenge.findthatbook.unit;
 
-import com.testvagrant.booknamechallenge.findthatbook.Models.Author;
-import com.testvagrant.booknamechallenge.findthatbook.Models.Book;
-import com.testvagrant.booknamechallenge.findthatbook.Models.BookList;
-import com.testvagrant.booknamechallenge.findthatbook.Models.SearchQueryParam;
-import com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadResponseProcessor;
-import com.testvagrant.booknamechallenge.findthatbook.ServiceImpl.GoodReadSearchImpl;
-import com.testvagrant.booknamechallenge.findthatbook.Utils.BookNotFoundException;
-import com.testvagrant.booknamechallenge.findthatbook.Utils.QueryHelper;
-import com.testvagrant.booknamechallenge.findthatbook.Utils.RestAPITemplate;
+import com.testvagrant.booknamechallenge.findthatbook.model.Author;
+import com.testvagrant.booknamechallenge.findthatbook.model.Book;
+import com.testvagrant.booknamechallenge.findthatbook.model.BookList;
+import com.testvagrant.booknamechallenge.findthatbook.model.SearchQueryParam;
+import com.testvagrant.booknamechallenge.findthatbook.serviceImpl.GoodReadSearchImpl;
+import com.testvagrant.booknamechallenge.findthatbook.utils.BookNotFoundException;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
 import static org.mockito.Mockito.when;
 
